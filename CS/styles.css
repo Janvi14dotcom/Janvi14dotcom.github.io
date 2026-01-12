@@ -1,0 +1,1142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header & Navigation */
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 0.2rem;
+}
+
+.logo .motto {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+    font-style: italic;
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.nav-links .login-btn {
+    background: white;
+    color: #667eea;
+    border-radius: 25px;
+    font-weight: 600;
+    padding: 0.6rem 1.5rem;
+}
+
+.nav-links .login-btn:hover {
+    background: rgba(255, 255, 255, 0.9);
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 6rem 5%;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background: white;
+    color: #667eea;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-button-secondary {
+    background: transparent;
+    color: white;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    border: 2px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.cta-button-secondary:hover {
+    background: white;
+    color: #667eea;
+    transform: translateY(-3px);
+}
+
+/* Features Section */
+.features {
+    padding: 4rem 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #667eea;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    color: #667eea;
+    margin-bottom: 1rem;
+}
+
+/* Subjects Section */
+.subjects {
+    background: #f8f9fa;
+    padding: 4rem 5%;
+    text-align: center;
+}
+
+.subjects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #667eea;
+}
+
+.subject-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.subject-item {
+    background: white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    color: #667eea;
+}
+
+.why-choose-list {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.why-item {
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    color: #555;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.why-item:hover {
+    transform: translateX(10px);
+}
+
+/* Courses Section */
+.courses-preview {
+    padding: 4rem 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.courses-preview h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #667eea;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.course-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.course-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.course-card h3 {
+    color: #667eea;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.course-card p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.course-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.enroll-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.enroll-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Courses Page */
+.courses-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 4rem 5%;
+    text-align: center;
+}
+
+.courses-hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.courses-filter {
+    background: #f8f9fa;
+    padding: 2rem 5%;
+}
+
+.filter-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.filter-container h3 {
+    color: #667eea;
+    margin-bottom: 1rem;
+}
+
+.class-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.8rem 1.5rem;
+    border: 2px solid #667eea;
+    background: white;
+    color: #667eea;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #667eea;
+    color: white;
+}
+
+.all-courses {
+    padding: 4rem 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.courses-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.course-detail-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.course-detail-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.course-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.course-icon-large {
+    font-size: 4rem;
+}
+
+.course-title-section h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.course-subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.course-details {
+    padding: 2rem;
+}
+
+.course-description {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.course-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.stat-icon {
+    font-size: 1.5rem;
+}
+
+.course-features {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.course-features h4 {
+    color: #667eea;
+    margin-bottom: 1rem;
+}
+
+.course-features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.course-features li {
+    padding: 0.5rem 0;
+    color: #555;
+}
+
+.enroll-btn-large {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.enroll-btn-large:hover {
+    transform: scale(1.02);
+}
+
+.learning-features {
+    background: #f8f9fa;
+    padding: 4rem 5%;
+    text-align: center;
+}
+
+.learning-features h2 {
+    font-size: 2.5rem;
+    color: #667eea;
+    margin-bottom: 3rem;
+}
+
+.platform-features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.platform-feature {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon-large {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.platform-feature h3 {
+    color: #667eea;
+    margin-bottom: 1rem;
+}
+
+/* Login Page */
+.login-section {
+    padding: 4rem 5%;
+    min-height: 80vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.login-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.login-box {
+    background: white;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.login-header h2 {
+    color: #667eea;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.login-header p {
+    color: #666;
+}
+
+.login-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-weight: 600;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.forgot-password {
+    color: #667eea;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-submit-btn {
+    width: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.login-submit-btn:hover {
+    transform: translateY(-2px);
+}
+
+.login-divider {
+    text-align: center;
+    margin: 2rem 0;
+    position: relative;
+}
+
+.login-divider::before,
+.login-divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background: #ddd;
+}
+
+.login-divider::before {
+    left: 0;
+}
+
+.login-divider::after {
+    right: 0;
+}
+
+.login-divider span {
+    background: white;
+    padding: 0 1rem;
+    color: #999;
+}
+
+.alternative-login {
+    text-align: center;
+}
+
+.alternative-login p {
+    margin: 0.5rem 0;
+}
+
+.alternative-login a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.alternative-login a:hover {
+    text-decoration: underline;
+}
+
+.login-info {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.login-info h3 {
+    color: #667eea;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.portal-features {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.portal-feature-item {
+    display: flex;
+    gap: 1rem;
+    align-items: start;
+}
+
+.feature-check {
+    background: #667eea;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-weight: bold;
+}
+
+.portal-feature-item h4 {
+    color: #667eea;
+    margin-bottom: 0.3rem;
+}
+
+.portal-feature-item p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.support-info {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.support-info h4 {
+    color: #667eea;
+    margin-bottom: 1rem;
+}
+
+.support-info p {
+    margin: 0.5rem 0;
+    color: #555;
+}
+
+/* Enrollment Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal-content {
+    background-color: white;
+    margin: 3% auto;
+    padding: 3rem;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
+    animation: slideDown 0.3s ease;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: #667eea;
+}
+
+.modal-content h2 {
+    color: #667eea;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+.modal-subtitle {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.enrollment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.enrollment-form .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-weight: 600;
+}
+
+.enrollment-form .form-group input,
+.enrollment-form .form-group select,
+.enrollment-form .form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+
+.enrollment-form .form-group input:focus,
+.enrollment-form .form-group select:focus,
+.enrollment-form .form-group textarea:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: start;
+    gap: 0.8rem;
+    cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin-top: 0.3rem;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.checkbox-label span {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.submit-enrollment-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-top: 1rem;
+}
+
+.submit-enrollment-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* About Page */
+.about-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 4rem 5%;
+    text-align: center;
+}
+
+.about-hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.about-content {
+    padding: 4rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-section {
+    margin-bottom: 3rem;
+}
+
+.about-section h3 {
+    color: #667eea;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.values-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.values-list li {
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background: #f8f9fa;
+    border-left: 4px solid #667eea;
+    font-size: 1.1rem;
+}
+
+.reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.reason-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.reason-card h4 {
+    color: #667eea;
+    margin-bottom: 0.5rem;
+}
+
+/* Contact Page */
+.contact-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 4rem 5%;
+    text-align: center;
+}
+
+.contact-hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.contact-content {
+    padding: 4rem 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.contact-info h3,
+.contact-form-container h3 {
+    color: #667eea;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.info-item {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.info-icon {
+    font-size: 2rem;
+}
+
+.info-text h4 {
+    color: #667eea;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.submit-button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.submit-button:hover {
+    transform: translateY(-3px);
+}
+
+/* FAQ Section */
+.faq-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.faq-section h3 {
+    color: #667eea;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.faq-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h4 {
+    color: #667eea;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 2rem 5%;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.footer-content p {
+    margin: 0.5rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-hero h2,
+    .contact-hero h2 {
+        font-size: 2rem;
+    }
+
+    .login-container {
+        grid-template-columns: 1fr;
+    }
+
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cta-button,
+    .cta-button-secondary {
+        width: 100%;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-content {
+        margin: 10% auto;
+        padding: 2rem;
+        width: 95%;
+    }
+}
